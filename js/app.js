@@ -6,10 +6,10 @@ const images = document.querySelectorAll('.slider img');
 let index = 0;
 // let interval = setInterval(run, 2500);
 
-function run() {
-  index++;
-  changeImage();
-}
+// function run() {
+//   index++;
+//   changeImage();
+// }
 
 function changeImage() {
   if (index > images.length - 1) {
@@ -23,7 +23,7 @@ function changeImage() {
 
 // function resetInterval() {
 //   clearInterval(interval); // so interval doesn't interfere with manual switches
-//   interval = setInterval(run, 2500); // re-set the same interval with count startin after click
+//   interval = setInterval(run, 2500); // re-set the same interval with count starting after click
 // }
 
 right.addEventListener('click', () => {
