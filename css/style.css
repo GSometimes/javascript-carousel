@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   height: 100vh;
   display: flex;
@@ -9,11 +15,12 @@ body {
   height: 600px;
   width: 600px;
   overflow: hidden;
-  border-radius: 5px 5px 0 0; /* TL TR BR BL */
+  border-radius: 5px 5px 0 0;
 }
 
 .slider {
   display: flex;
+  list-style: none;
 }
 
 .slider img {
@@ -25,17 +32,18 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .slider-button {
-  background: none;
+  /* width: 50%; */
+  flex-grow: 1;
   border: none;
   font-size: 4rem;
-  width: 50%;
   background-color: rgba(0, 0, 0, 0.5);
   color: rgba(255, 255, 255, 0.75);
   cursor: pointer;
+  /* border-radius: 0 0 5px 5px; */
 }
 
 .slider-button:hover,
@@ -49,9 +57,9 @@ body {
 }
 
 .slider-button.left {
-  border-radius: 0 0 0 5px; /* TL TR BR BL */
+  border-radius: 0 0 0 5px;
 }
 
 .slider-button.right {
-  border-radius: 0 0 5px 0; /* TL TR BR BL */
+  border-radius: 0 0 5px 0;
 }
